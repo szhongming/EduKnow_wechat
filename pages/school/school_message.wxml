@@ -1,0 +1,202 @@
+<!--pages/school/school_message.wxml-->
+<view class='container'>
+  <view class='school_picture'>
+    <image style='width:100%;height:280rpx' src='/images/harvard.jpg'></image>
+  </view>
+  <view class='school_info'>
+    <view>
+      <text id='school_name'>麻省理工学院</text>
+    </view>
+    <view>
+      <text style='font-size:12px'>MIT</text>
+    </view>
+    <view style='display:flex;margin:10rpx;line-height:20rpx'>
+        <view class='school_type'>
+          <text id='school_location' style='font-size:10px;line-height:10px'>美国</text>
+        </view>
+        <view class='school_type' style='margin-left:30rpx'>
+          <text id='school_private' style='font-size:10px;line-height:10px'>私立</text>
+        </view>
+          <image style='margin-left:250rpx' class='icon' src='/images/分享.png'></image>
+          <image style='margin-left:20rpx' class='icon' src='/images/收藏.png'></image>
+    </view>
+    <view style='padding:20rpx;margin-bottom:30rpx;border-bottom: 1rpx solid lightgrey'>
+        <text id='school_introduce'>麻省理工学院成立于1861年，成立之初是为了响应美国日益工业化的脚步，该学校拥有全球最好的科学、技术和工程专业，另外还有很优质的建筑课程。
+     </text> 
+    </view>
+    <view id='foruniversity'>
+      <view style='margin-bottom:20rpx'>
+        <text class='subtitle'>Eduknow评分</text>
+      </view>
+      <view style='display:flex'>
+        <view>
+          <text class='msg_name'>入学难度</text>
+        </view>
+        <view>
+          <progress percent='50' active></progress>
+        </view>
+        <view>
+          <text class='msg_name'>学业量</text>
+        </view>
+        <view>
+          <progress></progress>
+        </view>
+      </view>
+      <view style='display:flex'>
+        <view>
+          <text class='msg_name'>工作前景C.H</text>
+        </view>
+        <view>
+          <progress></progress>
+        </view>
+        <view>
+          <text class='msg_name'>安全度</text>
+        </view>
+        <view>
+          <progress></progress>
+        </view>
+      </view>
+      <view style='display:flex'>
+        <view>
+          <text class='msg_name'>工作前景U.S</text>
+        </view>
+        <view>
+          <progress></progress>
+        </view>
+        <view>
+          <text class='msg_name'>中文环境</text>
+        </view>
+        <view>
+          <progress></progress>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+  
+  <view class='school_comment' bindtap='schoolcomment'>
+    <view style='display:flex'>
+      <text class='subtitle'>评论</text>
+      <text class='msg_name' style='padding-top:20rpx;margin-left:30rpx'>共</text><text id='comment_number' style='padding-top:20rpx;margin-right:10rpx;margin-left:10rpx;color:#1296db'>5</text><text class='msg_name' style='padding-top:20rpx'>条</text>
+      <text class='msg_name' style='padding-top:20rpx;margin-left:210rpx;color:#696969'>查看更多＞</text>
+    </view>
+    <view style='margin-top:20rpx;margin-bottom:20rpx'>
+      <text class='msg_name' id='user_name'>匿名</text>
+      <text class='msg_name' style='margin-left:340rpx'>2018-08-22</text>
+    </view>
+    <view>
+      <text id='comment' class='msg'>麻省理工学院成立于1861年，成立之初是为了响应美国日益工业化的脚步，该学校拥有全球最好的科学、技术和工程专业，另外还有很优质的建筑课程。</text>
+    </view>
+    <view style='margin-top:20rpx;margin-left:420rpx;display:flex'>
+      <image class='icon' src='/images/赞.png'></image>
+      <text class='msg_name'>3</text>
+      <image class='icon' src='/images/踩.png'></image>
+      <text class='msg_name'>1</text>
+    </view>
+  </view>
+  
+  <view class='school_msg'>
+    <view class='school_rank'>
+      <view style='margin-bottom:20rpx'>
+        <text class='subtitle'>排名</text>
+      </view>
+      <text class='msg_name'>US News</text><text class='msg_name' style='margin-left:10rpx;color:#1296db'>2</text>
+      <text class='msg_name' style='margin-left:40%'>世界排名</text><text class='msg_name' style='margin-left:10rpx;color:#1296db'>1</text>
+    </view>
+    <view class='school_normalInfo'>
+        <view>
+          <text class='subtitle' style='margin-top:20rpx'>基本信息</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题栏.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>公私</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>私立</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题栏.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>类型</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>研究</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题栏.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>男女</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>男女同校</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题栏.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>位置</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>美国东北</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题栏.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>环境</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>城市</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题栏.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>学费</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>$67580</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题栏.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>地址</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>Cambridge,MA 02138</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题栏.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>网址</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>https//www.harvard.edu/</text>
+        </view>
+    </view>
+    <view class='school_application'>
+        <view>
+          <text class='subtitle' style='margin-top:20rpx'>申请时间点</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题2.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>入学概率</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>5%</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题2.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>国际学生</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>12%</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题2.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>申请时间</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>2018-11-01</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题2.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>申请类别</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>MIT</text>
+        </view>
+    </view>
+    <view class='school_employment'>
+        <view>
+          <text class='subtitle' style='margin-top:20rpx'>就业</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题3.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>顶尖专业</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>工程学 计算机 物理科学</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题3.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>就业公司</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>谷歌，花旗，微软</text>
+        </view>
+        <view style='display:flex;margin-top:50rpx'>
+          <image src='/images/标题3.png' class='icon'></image>
+          <text class='msg_name' style='margin-left:20rpx'>平均薪资</text>
+          <text class='msg' id='school_private' style='margin-left:20%'>$94200</text>
+        </view>
+    </view>
+  </view>
+  <view class='comment_publish'>
+    <button class='publish'>发表评论</button>
+    <image class='icon' style='padding-top:25rpx;margin-left:75%' src='/images/分享.png'></image>
+    <image class='icon' style='padding-top:25rpx;margin-left:20rpx' src='/images/收藏.png'></image>
+  </view>
+</view>

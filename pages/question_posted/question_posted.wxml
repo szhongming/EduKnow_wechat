@@ -1,0 +1,71 @@
+    <view id="adduser">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+             <view class="section">
+                <view class='form-group'>
+                    <textarea name="txt" class="input-text" clos=",50" rows="5" warp="virtual" placeholder='请写下你的问题！最后以问号结尾~'></textarea>
+                </view>    
+            </view>
+           
+            <view class="section section_gap">
+                <view class="section__title">我是</view>
+                <view class='form-group-s'>
+                    <radio-group name="gender" class="gender">
+                      <view class='label'>
+                        <label >
+                          <radio class="radio-s" value="0"/>
+                            <view class='radio'>
+                              <text class='text'> 学生</text>
+                            </view>
+                        </label>
+                      </view>
+                      <view class='label'>
+                        <label >
+                          <radio class="radio-s" value="1"/>
+                            <view class='radio'>
+                              <text class='text'> 家长</text>
+                            </view>
+                        </label>
+                      </view>
+                      <view class='label'>
+                        <label >
+                          <radio class="radio-s" value="2"/>
+                            <view class='radio'>
+                              <text class='text'> 教师</text>
+                            </view>
+                        </label>
+                      </view>
+                      <view class='label'>
+                        <label >
+                          <radio class="radio-s" value="3"/>
+                            <view class='radio'>
+                              <text class='text'> 申请者</text>
+                            </view>
+                        </label>
+                      </view>
+                       <view class='label'>
+                        <label for="input" >
+                          <radio class="radio-s" value="4"/>
+                            <view class='radio'>
+                              <text class='text'> 其他</text>
+                            </view>
+                        </label>
+                      </view>
+                      	
+                    </radio-group>
+                </view>    
+            </view>
+
+            <view class="section section_gap-s">
+                <view class='form-group-s'>
+                    <checkbox-group name="hobby">
+                        <label><checkbox value="1"/>使用匿名发布</label>
+                    </checkbox-group>
+                </view>
+            </view>
+            
+           
+        <view class='put_question' bindtap='toast'>
+          <text class='text3'>提交</text>
+        </view>
+        </form>
+    </view>    

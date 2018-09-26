@@ -1,0 +1,26 @@
+<!--pages/school/school_comment.wxml-->
+<view class='container'>
+  <view class='school_name'>
+    <text id='school_name' style='margin-left:30rpx'>哈佛大学</text>
+  </view>
+  <view style='width:100%;padding-left:100rpx;margin-top:30rpx'>
+      <text class='subtitle'>评论</text>
+  </view>
+  <view class='school_comment'>
+    <view style='margin-top:20rpx;margin-bottom:20rpx'>
+      <text class='msg_name' id='user_name'>匿名</text>
+      <text class='msg_name' style='margin-left:340rpx' id='comment_time'>2018-08-22</text>
+    </view>
+
+    <view>
+      <text id='comment' class='msg'>麻省理工学院成立于1861年，成立之初是为了响应美国日益工业化的脚步，该学校拥有全球最好的科学、技术和工程专业，另外还有很优质的建筑课程。</text>
+    </view>
+    <view style='margin-top:20rpx;margin-left:420rpx;display:flex;margin-bottom:20rpx;'>
+      <image class='icon' src='/images/赞.png'></image>
+      <text class='msg_name'>3</text>
+      <image class='icon' src='/images/踩.png'></image>
+      <text class='msg_name'>1</text>
+    </view>
+  </view>
+
+</view>

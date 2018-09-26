@@ -1,0 +1,121 @@
+<!--index.wxml-->
+<swiper circular="{{circular}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item.b_url}}" class="slide-image" />
+      </swiper-item>
+    </block>
+</swiper>
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+ 
+<!--低龄预备-->
+<view hidden="{{currentTab!==0}}" class='main'>
+  <text wx:for="{{navbar1}}" data-idx="{{index}}" class="item1 {{color==index ? 'active' : ''}}" wx:key="unique" bindtap="changecolor">{{item}}</text>
+</view>
+ 
+<!--高中留学-->
+<view hidden="{{currentTab!==1}}" class='main'>
+  <text wx:for="{{navbar2}}" data-idx="{{index}}" class="item2 {{color==index ? 'active' : ''}}" wx:key="unique" bindtap="changecolor">{{item}}</text>
+</view>
+ 
+<!--大学留学-->
+<view hidden="{{currentTab!==2}}" class='main'>
+  <text wx:for="{{navbar3}}" data-idx="{{index}}" class="item2 {{color==index ? 'active' : ''}}" wx:key="unique" bindtap="changecolor">{{item}}</text>
+</view>
+<!--问题和回答-->
+<view class='outside' wx:for="{{a}}">
+  <view class='question_answer'>
+    <view class='question_answer_top'>
+      <text class='rejoin'>问答</text>
+      <text class='rejoinContent'>共<text class='rejoinNum'>{{rejoinNum}}</text>个问题</text>
+      <text class='more' bindtap='gotoquestion'>查看更多></text>
+    </view>
+    <view class='question'>
+      <image src='/images/问题反馈.png' class='question_image'></image>
+      <view class='question_content'><text class='question_text'>{{item.question_content}}</text></view>
+    </view>
+    <view class='answer'>
+      <image src='/images/回答.png' class='answer_image'></image>
+      <view class='answer_content'><text class='answer_text'>{{item.answer_context}}</text></view>      
+    </view>
+    <view class='time'>{{item.question_time}}</view>
+    <view class='foot'>
+      <text class='text1'>ACT</text>
+      <text class='text2'>AST</text>
+      <image class='read_image' src='/images/显示答案.png'></image>
+      <text class='read'>{{item.question_look}}</text>
+      <image class='reply_image' src='/images/信息.png'></image>
+      <text class='reply'>{{answer}}</text>
+    </view>
+  </view>  
+</view>
+<!--专家-->
+<view class='outside'>
+  <view class='background'>
+    <swiper circular="{{circular}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
+    interval="{{intervalExpert}}" duration="{{durationExpert}}">
+      <block wx:for="{{expertUrl}}">
+        <swiper-item>
+          <view class='expert'>
+            <view class='expertContent' hidden="{{hiddenOne}}" bindtap='toast'>
+              <view class='headPortrait'><image src="{{imgUrl}}{{item.one.admin_picture}}" class="expert-image" /></view>
+              <view class='name'><text>{{item.one.admin_name}}</text></view>
+              <view class='title'><text>{{item.one.admin_introduce}}</text></view>
+              <view class='number'><text>{{item.one.numberOne}}</text></view>
+            </view>
+            <view class='expertContent' hidden="{{hiddenTwo}}" bindtap='toast'>
+              <view class='headPortrait'><image src="{{imgUrl}}{{item.two.admin_picture}}" class="expert-image" /></view>
+              <view class='name'><text>{{item.two.admin_name}}</text></view>
+              <view class='title'><text>{{item.two.admin_introduce}}</text></view>
+              <view class='number'><text>{{item.two.numberTwo}}</text></view>
+            </view>
+            <view class='expertContent' hidden="{{hiddenThree}}" bindtap='toast'>
+              <view class='headPortrait'><image src="{{imgUrl}}{{item.three.admin_picture}}"class="expert-image"/></view>
+              <view class='name'><text>{{item.three.admin_name}}</text></view>
+              <view class='title'><text>{{item.three.admin_introduce}}</text></view>
+              <view class='number'><text>{{item.three.numberThree}}</text></view>
+            </view>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<!--视频资讯-->
+<view class='outside' wx:for="{{video}}">
+   <view class='video'>
+       <view class='foreword'>{{item.foreword}}</view>
+       <view class="preview">
+         <video class='videoPicture' src='{{item.preview}}'></video>
+       </view>
+       <view class='readType'>
+          <image class='videoRead' mode='{{mode}}' src='{{inforRead}}'/>
+          <text class='videoNum'>{{item.videoNum}}</text>
+          <!-- <image  catchtap='onCollectionTap' wx:if="{{collected}}" src="/images/icon/collect1.png"></image>
+          <image wx:else catchtap='onCollectionTap' src="/images/icon/collect.png"></image> -->
+          <image class='collection' mode='{{mode}}' src='{{collection}}'/>
+       </view>
+   </view>
+</view>
+<!--图文-->
+<view class='outside' wx:for="{{information}}">
+   <view class='infor' bindtap='toasts'>
+     <view class='inforleft'>
+       <view class='inforTitle'>
+         <text class='inforContent'>{{item.text}}</text>
+       </view>
+       <view class='readType'>
+          <image class='imageRead' mode='{{mode}}' src='{{inforRead}}'/>
+          <text class='inforNum'>{{item.inforNum}}</text>
+          <text class='SAT'>{{item.typeOne}}</text>
+          <text class='TUOFU'>{{item.typeTwo}}</text>
+       </view>
+     </view>
+     <view class='inforPicture'>
+       <image class='image' src='{{item.inforImage}}'/> 
+     </view>
+   </view>
+</view>

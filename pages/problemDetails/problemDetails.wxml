@@ -1,0 +1,45 @@
+<!--pages/problemDetails/problemDetails.wxml-->
+<view class='head'>
+  <view class='look'>
+    <image class='read_image' src='/images/显示答案.png'></image>
+    <text class='read'>{{read}}</text>
+    <image class='reply_image' src='/images/信息.png'></image>
+    <text class='reply'>123</text>
+  </view>
+  <view class='question'>
+    <image src='/images/问题反馈.png' class='question_image'></image>
+    <view class='question_content'>{{question_content}}</view>
+  </view>
+    <view class='foot'>
+    <text class='text1'>{{label}}</text>
+    <text class='text2'>AST</text>
+  </view>
+</view>
+<view class='empty'></view>
+
+
+<view class='body' wx:for="{{answer}}">
+  <view class='empty1'></view>
+  <view class='answer'>
+    <image src='/images/回答.png' class='answer_image'></image>
+    <view class='answer_content'>{{item.answer_context}}</view>      
+  </view>
+  <view class='name_time'>
+    <text class='name'>{{item.answer_anonymous}}</text>
+    <text class='time'>{{item.answer_time}}</text>
+  </view>
+  <view class='interaction'>
+    <image wx:if="{{collect}}" src='/images/赞1.png' class='fabulous_image' catchtap='fabulous' data-text='{{item.answer_context}}'></image>
+    <image wx:else src='/images/赞.png' class='fabulous_image' catchtap='fabulous' data-text='{{item.answer_context}}'></image>
+    <text class='fabulous'>{{item.answer_fabulous}}</text>
+    <image wx:if="{{collect}}" src='/images/图标_点踩.png' class='tread_image' catchtap='tread' data-text1='{{item.answer_context}}'></image>
+    <image wx:else src='/images/踩.png' class='tread_image' catchtap='tread' data-text1='{{item.answer_context}}'></image>
+    <text class='tread'>{{item.answer_tread}}</text>
+  </view>
+</view>
+<view class='bottom'>
+  <text class='quiz'>回答问题</text>
+  <image src='/images/分享.png' class='bottom_image'></image>
+  <image wx:if="{{collected}}" src='/images/收藏成功.png' class='bottom_image1' catchtap='onCollectionTap'></image>
+  <image wx:else catchtap='onCollectionTap' src='/images/收藏.png' class='bottom_image1'></image>
+</view>

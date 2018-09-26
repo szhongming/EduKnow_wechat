@@ -1,0 +1,211 @@
+/* pages/problemDetails/problemDetails.wxss */
+.head{
+  width: 100%;
+  background-color: #fff;
+}
+.look{
+  position: relative;
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+.read_image{
+  position: relative;
+  left: 70%;
+  width: 40rpx;
+  height: 40rpx;
+}
+.read{
+  position: relative;
+  left: 71%;
+  font-size: 23rpx;
+  line-height: 40rpx;
+  height: 30rpx;
+  color: #c8c8c9;
+}
+.reply_image{
+  position: relative;
+  left: 73%;
+  width: 40rpx;
+  height: 40rpx;
+}
+.reply{
+  position: relative;
+  left: 74%;
+  font-size: 23rpx;
+  line-height: 40rpx;
+  height: 30rpx;
+  color: #c8c8c9;
+}
+.question{
+  position: relative;
+  width: 97%;
+  margin-top: -10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.question_image{
+  position: relative;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.question_content{
+  position: relative;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  font-weight: 600;
+  line-height: 45rpx;
+  width: 89%;
+}
+.empty{
+  background-color: #dfdfe2;
+  width: 100%;
+  height: 10rpx;
+  position: relative;
+}
+.body{
+  width: 100%;
+  border-width: 0 0 1rpx 0;
+  border-style: solid;
+  border-color: #c8c8c9;
+}
+.empty1{
+  width: 100%;
+  height: 20rpx;
+  position: relative;
+}
+.answer{
+  position: relative;
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+}
+.answer_image{
+  position: relative;
+  margin-left: 15rpx;
+  width: 55rpx;
+  height: 55rpx;
+}
+.answer_content{
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  color: #414040;
+  width: 89%;
+}
+.foot{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  background-color: #fff;
+}
+.text1{
+  position: relative;
+  left: 10%;
+  font-size: 23rpx;
+  border: 1rpx solid #62e1e6;
+  color: #62e1e6;
+  margin-top: 30rpx;
+  line-height: 30rpx;
+  height: 30rpx; 
+}
+.text2{
+  position: relative;
+  left: 13%;
+  font-size: 23rpx;
+  border: 1rpx solid #62e1e6;
+  color: #62e1e6;
+  margin-top: 30rpx;
+  line-height: 30rpx;
+  height: 30rpx;
+}
+.name_time{
+  position: relative;
+  width: 100%;
+  height: 50rpx;
+}
+.name{
+  font-size: 25rpx;
+  position: relative;
+  margin-left: 12%;
+  color: #c8c8c9;
+}
+.time{
+  font-size: 25rpx;
+  position: absolute;
+  left: 80%;
+  color: #c8c8c9;
+}
+.interaction{
+  position: relative;
+  height: 70rpx;
+}
+.fabulous_image{
+  position: relative;
+  left: 74%;
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 10rpx;
+}
+.fabulous{
+  position: relative;
+  left: 75%;
+  font-size: 23rpx;
+  line-height: 70rpx;
+  height: 60rpx;
+  color: #c8c8c9;
+}
+.tread_image{
+  position: relative;
+  left: 78%;
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 20rpx;
+}
+.tread{
+  position: relative;
+  left: 79%;
+  font-size: 23rpx;
+  line-height: 70rpx;
+  height: 60rpx;
+  color: #c8c8c9;
+}
+.bottom{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  bottom: 0rpx;
+  height: 100rpx;
+
+}
+.quiz{
+  position: relative;
+  width: 70%;
+  margin-left: 4%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background-color: #62e1e6;
+  border-radius: 3em;
+  font-size: 30rpx;
+  color: #fff;
+}
+.bottom_image{
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  left: 4%;
+  margin-top: 10rpx;
+}
+.bottom_image1{
+  width: 60rpx;
+  height: 60rpx;
+  position: relative;
+  left: 6%;
+  margin-top: 10rpx;
+}

@@ -1,0 +1,55 @@
+
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index_expert/index_expert",
+    "pages/index_article/index_article",
+    "pages/logs/logs",
+    "pages/question_answer/question_answer",
+    "pages/school/school",
+    "pages/school/school_comment",
+    "pages/school/school_compare",
+    "pages/school/school_message",
+    "pages/question_posted/question_posted",
+    "pages/userInfo/userInfo",
+    "pages/problemDetails/problemDetails"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "留学百晓生",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1296db",
+    "borderStyle": "red",
+    "list": [
+      {
+        "selectedIconPath": "images/555.png",
+        "iconPath": "images/55.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/111.png",
+        "iconPath": "images/11.png",
+        "pagePath": "pages/question_answer/question_answer",
+        "text": "问答"
+      },
+      {
+        "selectedIconPath": "images/333.png",
+        "iconPath": "images/33.png",
+        "pagePath": "pages/school/school",
+        "text": "选校"
+      },
+      {
+        "selectedIconPath": "images/444.png",
+        "iconPath": "images/44.png",
+        "pagePath": "pages/userInfo/userInfo",
+        "text": "我的"
+      }
+    ]
+  }
+}
+

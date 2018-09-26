@@ -1,0 +1,173 @@
+/* pages/school/school.wxss */
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: #1296db;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #1296db;
+}
+/* 下拉菜单 */
+.cxj-menu {
+  background-color: #f5f5f5;
+  width: 750rpx;
+  height: 80rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 32rpx;
+}
+.cxj-menu .active image {
+  transform: rotate(180deg);
+  background: none;
+}
+.cxj-menu .active {
+  background-color: #fff;
+}
+.flex-view {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.cxj-icon {
+  width: 24rpx;
+  height: 24rpx;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.cxj-content {
+  width: 750rpx;
+  font-size: 28rpx;
+}
+
+.cxj-content-li {
+  line-height: 60rpx;
+  text-align: center;
+}
+
+.cxj-tab-layout {
+  width: 750rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 80rpx;
+  z-index: 1;
+  border-bottom: solid 1px #eee;
+  height: 100%;
+  background-color: rgba(000,000,000,.5);
+  
+}
+
+.cxj-tab-layout .active {
+  color: #00aa14;
+}
+
+.cxj-tab-layout view {
+  width: 750rpx;
+  text-indent: 40rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-top: 1rpx solid #e7e7e7;
+  background-color:#ffffff;
+  
+}
+/* 学校信息条 */
+.messagebox{
+  flex-direction: row;
+  display: flex;
+  padding: 30rpx;
+  border-bottom: 1rpx solid lightgray;
+}
+.school_logo{
+  width: 180rpx;
+  height: 180rpx;
+  border: 1rpx solid darkgray;
+}
+.schoolmsg{
+  width: 350rpx;
+  height: 100%;
+  padding-left:30rpx;
+}
+.school_name{
+  font-size: 16px;
+}
+.school_difficult{
+  font-size: 10px;
+  color:darkgray;
+}
+.school_type{
+  margin-left: 30rpx;
+  width: 60rpx;
+  height: 30rpx;
+  border: 1rpx solid #1296db;
+}
+.school_category{
+  flex-direction: row;
+  display: flex;
+  line-height: 20rpx;
+  margin-top: 30rpx;
+}
+.us_map{
+  width: 150rpx;
+  height: 150rpx;
+}
+.compare_btn{
+  flex-direction: row;
+  display: flex;
+  padding-left: 40rpx;
+  position: fixed;
+  width: 100%;
+  height: 60rpx;
+  bottom: 10rpx;
+}
+#cancel{
+  margin: 0;
+  outline-color: #1296db;
+  line-height: 60rpx;
+  font-size: 12px;
+  color: gray;
+  width: 45%;
+}
+#compare{
+  margin: 0;
+  outline-color: #1296db;
+  background-color: #1296db;
+  line-height: 60rpx;
+  font-size: 12px;
+  color: #fff;
+  width: 45%;
+}
+#school_difficult{
+  width: 100rpx;
+}
+#school_compare{
+  color: #fff;
+  background-color: red;
+  font-size: 12px;
+}

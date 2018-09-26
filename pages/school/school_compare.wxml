@@ -1,0 +1,90 @@
+<!--pages/school/school_compare.wxml-->
+<view class="table">
+  <view class="tr bg-w">
+    <view class="th">类别</view>
+    <view class="th">麻省理工学院</view>
+    <view class="th">斯坦福大学</view>
+  </view>
+  <block>
+    <view class="tr bg-g">
+      <view class="td">美国排名</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr">
+      <view class="td">世界排名</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr bg-g">
+      <view class="td">公/私</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr">
+      <view class="td">类 型</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr bg-g">
+      <view class="td">位 置</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr">
+      <view class="td">环 境</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr bg-g">
+      <view class="td">学 费</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr">
+      <view class="td">地 址</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr bg-g">
+      <view class="td">网 址</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr">
+      <view class="td">入学率</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr bg-g">
+      <view class="td">国际学生比例</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr">
+      <view class="td">申请时间</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr bg-g">
+      <view class="td">申请类别</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr">
+      <view class="td">顶尖专业</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr bg-g">
+      <view class="td">毕业生就业</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+    <view class="tr">
+      <view class="td">平均薪资</view>
+      <view class="td">{{item.text}}</view>
+      <view class="td">{{item.type}}</view>
+    </view>
+  </block>
+</view>

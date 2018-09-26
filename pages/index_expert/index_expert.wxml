@@ -1,0 +1,47 @@
+<!--pages/question_answer/question_answer.wxml-->
+<view class="content">
+  <view class='hesds'>
+      <view class='headPortrait'><image src="{{expertImage2}}" class="expert-image"/></view>
+      <view class='name' ><text>{{nameOne}}</text></view>
+      <view class='title'><text>{{titleOne}}</text></view>
+      <view class="titles"></view>
+  </view>
+  <!--  -->
+  <view class="asd"></view>
+
+  <view style='width:95%;margin-left:2%'>
+
+    <view class="expert" >专家文章</view>
+
+  <view wx:for="{{information}}">
+  
+    <view class="body">
+      <view class="body-right">
+        <view class="body-text">
+          <text>{{item.text}}</text>
+        </view>
+        <view class='read'>
+           <image class='imageRead' mode='{{mode}}' src='{{inforRead}}'/>
+           <text>{{item.inforNum}}</text>
+        </view>
+        <view class='type'>
+            <view class='SAT'><text class='textOne'>{{item.typeOne}}</text></view>
+            <view class='TUOFU'><text class='textTwo'>{{item.typeTwo}}</text></view>
+        </view>
+      </view>
+    <!-- 文章图片 -->
+      <view class='body-left'>
+         <image src='{{item.inforImage}}'class='image'></image>
+      </view>
+    </view>
+    <!-- 分割线 -->
+    <view style='width:100%;border: 0.5rpx solid silver;'></view>
+    
+  </view> 
+
+  </view>
+ 
+ 
+</view>
+
+

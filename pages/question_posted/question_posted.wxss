@@ -1,0 +1,84 @@
+
+.section__title{
+    width:15%;
+}
+/* 文本框 */
+.form-group{
+    float: right;
+    width: 100%;
+    height:380rpx;
+}
+
+.form-group-s{
+    height: 220rpx;
+}
+/* 匿名发布 */
+.section_gap-s{
+  width: 100%;
+  height: 200rpx;
+  margin-left: 30rpx;
+}
+.section{
+    clear: both;
+    width:90%;
+    margin: 2rem auto;
+}
+.input-text{
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 360rpx;
+    border-radius: 0.25em;
+    margin-top: 1rpx;
+}
+.text{
+    display: flex;
+    justify-content:center;
+    font-size: 30rpx;
+}
+
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}
+
+.radio{
+  width: 150rpx;
+  height: 45rpx;
+  float: left;
+  margin-left: 10rpx;
+   border-radius: 1em;
+   margin-top: 5rpx;
+   background-color: darkgray;
+}
+.radio-s{
+  margin-left: 80rpx;
+  float: left;
+
+}
+.put_question{
+  position: fixed;
+  left: 5%;
+  width: 90%;
+  border-radius: 1em;
+  bottom: 20rpx;
+  background-color: #62e1e6;
+  height: 70rpx;
+  text-align: center;
+}
+.text3{
+  font-size: 26rpx;
+  color: #fff;  
+  line-height: 70rpx;
+}
+.text3{
+  color: #FFFFFF;
+}
+.label{
+  float: left;
+  margin-top: 20rpx;
+}
+.input{
+    	border:none #FFFFFF;
+    	border-bottom:#777777 solid 1px;
+    	background:transparent;
+}

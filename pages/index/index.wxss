@@ -1,0 +1,374 @@
+/**index.wxss**/
+.outside{
+  position: relative;
+  top: 5%; 
+  background-color: #E6E6E6;
+}
+/**轮播图**/
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper-image {
+  height: 100%;
+  width: 100%;
+}
+.slide-image{
+  height: 100%;
+  width: 100%;
+}
+/**导航**/
+page{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: #1296db;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #1296db;
+}
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 23rpx;
+  margin-top: 20rpx;
+}
+.main .item1.active{
+  background-color: #62e1e6;
+}
+.main .item2.active{
+  background-color: #62e1e6;
+}
+.main .item2.active{
+  background-color: #62e1e6;
+}
+.item1{
+  border: 1rpx solid #afb6bd;
+  border-radius: 1em;
+  width: 120rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+.item2{
+  border: 1rpx solid #afb6bd;
+  border-radius: 1em;
+  width: 120rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+.item3{
+  border: 1rpx solid #afb6bd;
+  border-radius: 1em;
+  width: 120rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+/**问答**/
+.question_answer{
+  position:relative;
+  top: 10rpx;
+  background-color: #fff;
+}
+.rejoin{
+  position: relative;
+  left: 30rpx;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+.rejoinContent{
+  position: relative;
+  left: 60rpx;
+  font-size: 23rpx;
+}
+.rejoinNum{
+  color: #62e1e6;
+}
+.more{
+  position: relative;
+  left: 450rpx;
+  font-size: 23rpx;
+}
+.question{
+  position: relative;
+  width: 97%;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+.question_image{
+  position: relative;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.question_content{
+  position: relative;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  font-size: 35rpx;
+  font-weight: 600;
+  line-height: 45rpx;
+  width: 89%;
+}
+.answer{
+  position: relative;
+  width: 97%;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  height: 120rpx;
+}
+.answer_image{
+  position: relative;
+  margin-left: 15rpx;
+  width: 55rpx;
+  height: 55rpx;
+}
+.answer_content{
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  color: #414040;
+  width: 89%;
+}
+.question_text{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.answer_text{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.time{
+  width: 95%;
+  text-align: right;
+  font-size: 23rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+  color: #c8c8c9;
+}
+.foot{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 60rpx;
+}
+.text1{
+  position: relative;
+  left: 10%;
+  font-size: 23rpx;
+  border: 1rpx solid #62e1e6;
+  color: #62e1e6;
+  line-height: 30rpx;
+  height: 30rpx; 
+}
+.text2{
+  position: relative;
+  left: 13%;
+  font-size: 23rpx;
+  border: 1rpx solid #62e1e6;
+  color: #62e1e6;
+  line-height: 30rpx;
+  height: 30rpx;
+}
+.read_image{
+  position: relative;
+  left: 62%;
+  width: 40rpx;
+  height: 40rpx;
+}
+.read{
+  position: relative;
+  left: 63%;
+  font-size: 23rpx;
+  line-height: 40rpx;
+  height: 30rpx;
+  color: #c8c8c9;
+}
+.reply_image{
+  position: relative;
+  left: 65%;
+  width: 40rpx;
+  height: 40rpx;
+}
+.reply{
+  position: relative;
+  left: 66%;
+  font-size: 23rpx;
+  line-height: 40rpx;
+  height: 30rpx;
+  color: #c8c8c9;
+}
+/**专家轮播图**/
+.background{
+  position:relative;
+  top: 10rpx;
+  background-color: #fff;
+}
+.expert{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 3%;
+  margin-top: 5%;
+}
+.expertContent{
+  text-align: center;
+  line-height: 35rpx;
+}
+.name{
+  font-size: 30rpx;
+  font-weight: 800;  
+}
+.title{
+  font-size: 20rpx;
+  font-weight: 300;
+}
+.number{
+  font-size: 20rpx;
+  font-weight: 100;
+}
+.expert-image{
+  width: 120rpx;
+  height: 120rpx;
+  border: 0 solid #ff0000;
+  border-radius: 100rpx;
+}
+/**资讯--图片**/
+.infor{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #fff;
+  margin-top: 10rpx;
+  height: 250rpx;
+}
+.inforleft{
+  position: relative;
+  margin-top: 5%;
+}
+.inforPicture{
+  position: relative;
+  margin-top: 5%;
+}
+.image{
+  width:120px; 
+  height:80px;
+}
+.inforContent{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  font-size: 37rpx;
+  font-weight: bold;
+}
+.readType{
+  margin-top: 2%;
+}
+.imageRead{
+  position: relative;
+  top:10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.inforNum{
+  position: relative;
+  left: 10rpx;
+  font-size: 23rpx;
+  line-height: 40rpx;
+  height: 30rpx;
+  color: #c8c8c9;
+}
+.SAT{
+  position: relative;
+  margin-left: 61%;
+  margin-right: 20rpx;
+  font-size: 23rpx;
+  border: 1rpx solid #62e1e6;
+  color: #62e1e6;
+  line-height: 30rpx;
+  height: 30rpx; 
+}
+.TUOFU{
+  position: relative;
+  font-size: 23rpx;
+  border: 1rpx solid #62e1e6;
+  color: #62e1e6;
+  line-height: 30rpx;
+  height: 30rpx;
+}
+/**资讯--视频**/
+.video{
+  margin-top: 10rpx;
+  background-color: #fff;
+}
+.foreword{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  font-size: 37rpx;
+  font-weight: bold;
+}
+.preview{
+  height: 300rpx;
+}
+.videoPicture{
+  width: 100%;
+  height: 300rpx;
+}
+.collection{
+  position: relative;
+  left: 85%;
+  width: 40rpx;
+  height: 40rpx;
+}
+.videoRead{
+  width: 40rpx;
+  height: 40rpx;
+}
+.videoNum{
+  position: relative;
+  left: 10rpx;
+  top: -10rpx;
+  font-size: 23rpx;
+  color: #c8c8c9;
+}

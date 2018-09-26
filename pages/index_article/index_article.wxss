@@ -1,0 +1,68 @@
+@import"../wxParse/wxParse.wxss";
+
+ .h{
+  font-size: 30rpx;
+  color: silver;
+  float: left;
+  margin-top: 25rpx;
+  margin-left: 25rpx;
+}
+.head-t{
+  font-size: 50rpx;
+  font-weight: 600rpx;
+  align-content: center;
+}
+.head-t text{
+  align-content: center;
+}
+.head-img{
+  margin-top: 55rpx;
+  width: 100%;
+}
+.head-img image{
+  height: 150rpx;
+}
+
+/* 全局 */
+.global{
+  width: 90%;
+  margin-left: 5%;
+
+} 
+/* 底部 */
+.bottom{
+  width: 100%;
+  height: 90rpx;
+  /* border: 1rpx solid #62e1e6; */
+}
+.bottom-n{
+  float: left;
+  width: 38%;
+  font-size: 35rpx;
+}
+.bottom-p{
+  float: right;
+  margin-right: 5rpx;
+  height: 40rpx;
+}
+
+.bottom-s{
+  margin-right: 5rpx;
+  float: right;
+  font-size: 32rpx;
+  height: 40rpx;
+}
+.praise{
+  margin-right: 5rpx;
+  position: relative;
+  width: 40rpx;
+  height: 40rpx;
+}
+.wei1{
+  height: 200rpx;
+}
+.wei2{
+  height: 180rpx;
+  margin-top: 10rpx;
+}
+

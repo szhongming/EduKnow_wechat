@@ -1,0 +1,31 @@
+<import src="../wxParse/wxParse.wxml"/> 
+
+<view class="global">
+    <view class='head'>
+      <view class='head-t'><text>{{title}}</text></view>
+      <view class='h head-n'><text>{{admin}}</text></view>
+      <view class='h head-b'><text>留学百晓生</text></view>
+      <view class='h time'><text>{{time}}</text></view>
+    </view>
+    <view class='head-img'>
+      <image src='{{inforImage}}'></image>
+    </view>
+
+  <view class="container">
+    <!-- 这一块是富文本 显示的内容区 -->
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  <view>
+      <image class="wei1" src='{{inforImage1}}'></image>
+      <image class="wei2" src='{{inforImage2}}'></image>
+  </view>
+  <view class='bottom'>
+    <view class="bottom-n">阅读数量:{{numbers}}</view>
+     <view class="bottom-s"><text>{{pnumber}}</text></view>
+    <view class='bottom-p'>
+      <image  class="praise" mode='{{mode}}' src='{{praise}}' bindtap="toCollect"></image>
+    </view>
+  </view>
+  
+
+</view>
